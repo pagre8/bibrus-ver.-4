@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grzel\\Desktop\\bibrus\\Tomczak-Projekt-Bibrus\\bibrus\\BibrusServer\\BibrusServer.csproj": {}
+    "/Users/grzel/Desktop/projekt tomczak/Tomczak-Projekt-Bibrus/bibrus/BibrusServer/BibrusServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grzel\\Desktop\\bibrus\\Tomczak-Projekt-Bibrus\\bibrus\\BibrusServer\\BibrusServer.csproj": {
+    "/Users/grzel/Desktop/projekt tomczak/Tomczak-Projekt-Bibrus/bibrus/BibrusServer/BibrusServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grzel\\Desktop\\bibrus\\Tomczak-Projekt-Bibrus\\bibrus\\BibrusServer\\BibrusServer.csproj",
+        "projectUniqueName": "/Users/grzel/Desktop/projekt tomczak/Tomczak-Projekt-Bibrus/bibrus/BibrusServer/BibrusServer.csproj",
         "projectName": "BibrusServer",
-        "projectPath": "C:\\Users\\grzel\\Desktop\\bibrus\\Tomczak-Projekt-Bibrus\\bibrus\\BibrusServer\\BibrusServer.csproj",
-        "packagesPath": "C:\\Users\\grzel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grzel\\Desktop\\bibrus\\Tomczak-Projekt-Bibrus\\bibrus\\BibrusServer\\obj\\",
+        "projectPath": "/Users/grzel/Desktop/projekt tomczak/Tomczak-Projekt-Bibrus/bibrus/BibrusServer/BibrusServer.csproj",
+        "packagesPath": "/Users/grzel/.nuget/packages/",
+        "outputPath": "/Users/grzel/Desktop/projekt tomczak/Tomczak-Projekt-Bibrus/bibrus/BibrusServer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\grzel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/grzel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +39,10 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.4, )"
             },
@@ -68,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
         }
       }
     }
