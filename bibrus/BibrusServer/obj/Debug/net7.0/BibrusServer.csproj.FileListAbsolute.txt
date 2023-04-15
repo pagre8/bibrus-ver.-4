@@ -87,3 +87,10 @@ C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Deb
 C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\Serilog.Sinks.File.dll
 C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
 C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\Serilog.Sinks.Seq.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL-Parser.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.DataLoader.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.NewtonsoftJson.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.Server.Core.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.Server.Transports.AspNetCore.dll
+C:\Users\grzel\Desktop\bibrus\Tomczak-Projekt-Bibrus\bibrus\BibrusServer\bin\Debug\net7.0\GraphQL.Server.Transports.AspNetCore.NewtonsoftJson.dll

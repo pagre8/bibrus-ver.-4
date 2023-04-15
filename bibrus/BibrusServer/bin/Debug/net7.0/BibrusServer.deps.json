@@ -9,6 +9,9 @@
       "BibrusServer/1.0.0": {
         "dependencies": {
           "Eris.Serilog.Formatting.Json": "1.0.0",
+          "GraphQL": "4.5.0",
+          "GraphQL.Server.Transports.AspNetCore": "5.0.2",
+          "GraphQL.Server.Transports.AspNetCore.NewtonsoftJson": "5.0.2",
           "Microsoft.AspNetCore.OpenApi": "7.0.5",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.Design": "7.0.5",
@@ -72,6 +75,89 @@
           }
         }
       },
+      "GraphQL/4.5.0": {
+        "dependencies": {
+          "GraphQL-Parser": "7.1.0",
+          "Microsoft.CSharp": "4.7.0",
+          "System.ComponentModel.Annotations": "4.7.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/GraphQL.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "4.5.0.0"
+          }
+        }
+      },
+      "GraphQL-Parser/7.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/GraphQL-Parser.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.0.0"
+          }
+        }
+      },
+      "GraphQL.DataLoader/4.1.0": {
+        "dependencies": {
+          "GraphQL": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.DataLoader.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "GraphQL.NewtonsoftJson/4.1.0": {
+        "dependencies": {
+          "GraphQL": "4.5.0",
+          "Newtonsoft.Json": "13.0.3",
+          "System.Buffers": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.NewtonsoftJson.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "GraphQL.Server.Core/5.0.2": {
+        "dependencies": {
+          "GraphQL": "4.5.0",
+          "GraphQL.DataLoader": "4.1.0",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphQL.Server.Core.dll": {
+            "assemblyVersion": "5.0.2.0",
+            "fileVersion": "5.0.2.0"
+          }
+        }
+      },
+      "GraphQL.Server.Transports.AspNetCore/5.0.2": {
+        "dependencies": {
+          "GraphQL.Server.Core": "5.0.2",
+          "Microsoft.Extensions.Options": "7.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/GraphQL.Server.Transports.AspNetCore.dll": {
+            "assemblyVersion": "5.0.2.0",
+            "fileVersion": "5.0.2.0"
+          }
+        }
+      },
+      "GraphQL.Server.Transports.AspNetCore.NewtonsoftJson/5.0.2": {
+        "dependencies": {
+          "GraphQL.NewtonsoftJson": "4.1.0",
+          "GraphQL.Server.Transports.AspNetCore": "5.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/GraphQL.Server.Transports.AspNetCore.NewtonsoftJson.dll": {
+            "assemblyVersion": "5.0.2.0",
+            "fileVersion": "5.0.2.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -99,7 +185,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/5.0.1": {
         "dependencies": {
           "Azure.Identity": "1.6.0",
@@ -388,7 +474,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.21.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.IdentityModel.Logging": "6.21.0",
           "System.Security.Cryptography.Cng": "5.0.0"
         },
@@ -644,6 +730,7 @@
           }
         }
       },
+      "System.ComponentModel.Annotations/4.7.0": {},
       "System.Configuration.ConfigurationManager/5.0.0": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "5.0.0",
@@ -775,6 +862,7 @@
           }
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.7.1": {},
       "System.Security.AccessControl/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -889,6 +977,55 @@
       "path": "eris.serilog.formatting.json/1.0.0",
       "hashPath": "eris.serilog.formatting.json.1.0.0.nupkg.sha512"
     },
+    "GraphQL/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qy8c1TgjUbCMQBvE4UCaXKHzghnunXGa9mA21wqXZpqpTf8wqpcDu17v0tHrD2ot7HiqH8B6cuRAYmRg/RY3Eg==",
+      "path": "graphql/4.5.0",
+      "hashPath": "graphql.4.5.0.nupkg.sha512"
+    },
+    "GraphQL-Parser/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jIF/+BihzkDsLhRSTZj8OQfumjRIPiBPy/KsPPqPmxcBJz3dPzd3e4m1MrCtOjaMtRR88isfB22c2V+6S3ig7g==",
+      "path": "graphql-parser/7.1.0",
+      "hashPath": "graphql-parser.7.1.0.nupkg.sha512"
+    },
+    "GraphQL.DataLoader/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M52nV5jphZh33uKIG9y6072xsAjB76IzRXB+X7V6RHsnvslV/16YJ361UJl26Z4OTtD2dsIeP4LWp9PntKyiOg==",
+      "path": "graphql.dataloader/4.1.0",
+      "hashPath": "graphql.dataloader.4.1.0.nupkg.sha512"
+    },
+    "GraphQL.NewtonsoftJson/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gcfI2WtI9euQdpSGPo1W3oydFy/ejataZKyn1DXAoIL80Av7vU5dtBIp6lGcz9PMElc8VovDbdPwnx0lli7ZqA==",
+      "path": "graphql.newtonsoftjson/4.1.0",
+      "hashPath": "graphql.newtonsoftjson.4.1.0.nupkg.sha512"
+    },
+    "GraphQL.Server.Core/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aOhbJIRfoCD+L9aPTTv3Bgyfacem2jH9Vy90v21xE/sjqJv3GdyMmxzIdpMQnPjmAARnzYg4O27wyhRshXLhLA==",
+      "path": "graphql.server.core/5.0.2",
+      "hashPath": "graphql.server.core.5.0.2.nupkg.sha512"
+    },
+    "GraphQL.Server.Transports.AspNetCore/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g1XVtyWCGH/rjwsYWo4z9Tb9xqjb9u2J6y7fnqIy1Egsjbmk/athya4xe+t7e+k1xxLGjBrs+sOi8k/ji33FRA==",
+      "path": "graphql.server.transports.aspnetcore/5.0.2",
+      "hashPath": "graphql.server.transports.aspnetcore.5.0.2.nupkg.sha512"
+    },
+    "GraphQL.Server.Transports.AspNetCore.NewtonsoftJson/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P7M4bkWkLNyqgrFwiDsbiarlg2C3vj0030358vDX6uaTiXLEQtd9sZfTbHd88O2JC/lh18JiK1U4bwKoDZshJg==",
+      "path": "graphql.server.transports.aspnetcore.newtonsoftjson/5.0.2",
+      "hashPath": "graphql.server.transports.aspnetcore.newtonsoftjson.5.0.2.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -910,12 +1047,12 @@
       "path": "microsoft.bcl.asyncinterfaces/1.1.1",
       "hashPath": "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.5.0": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/5.0.1": {
       "type": "package",
@@ -1316,6 +1453,13 @@
       "path": "system.codedom/4.4.0",
       "hashPath": "system.codedom.4.4.0.nupkg.sha512"
     },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
+    },
     "System.Configuration.ConfigurationManager/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1420,6 +1564,13 @@
       "sha512": "sha512-30D6MkO8WF9jVGWZIP0hmCN8l9BTY4LCsAzLIe4xFSXzs+AjDotR7DpSmj27pFskDURzUvqYYY0ikModgBTxWw==",
       "path": "system.runtime.caching/5.0.0",
       "hashPath": "system.runtime.caching.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zOHkQmzPCn5zm/BH+cxC1XbUS3P4Yoi3xzW7eRgVpDR2tPGSzyMZ17Ig1iRkfJuY0nhxkQQde8pgePNiA7z7TQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
     },
     "System.Security.AccessControl/5.0.0": {
       "type": "package",

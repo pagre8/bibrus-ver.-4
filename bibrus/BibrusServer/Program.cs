@@ -6,6 +6,8 @@ using Serilog.Formatting.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using BibrusServer.Models;
+using BibrusServer.GraphQL;
+using GraphQL.Server;
 
 string relative = @"..\..\bibrus\BibrusServer\";
 string absolute = Path.GetFullPath(relative);
@@ -34,9 +36,11 @@ builder.Services.Configure<IISServerOptions>(options =>
 
 builder.Services.AddControllers();
 
-//scoped schema
+builder.Services.AddScoped<BibrusSchema>();
 
-//GraphQL
+builder.Services.AddGraphQL(o => { })
+    .AddGraphTypes(ServiceLifetime.Scoped)
+    .AddNewtonsoftJson();
 
 builder.Services.AddSwaggerGen();
 
@@ -78,6 +82,6 @@ app.UseCors("policy");
 app.UseEndpoints(endpoints=>
 endpoints.MapControllers());
 
-//app.UseGraphQL<ApplicationsSchema>();
+app.UseGraphQL<BibrusSchema>();
 
 app.Run();
