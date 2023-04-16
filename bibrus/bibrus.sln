@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BibrusServer", "BibrusServer\BibrusServer.csproj", "{AEACC227-0392-4AF8-96F9-864607FA5B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibrusik", "..\..\..\Bibrusik\Bibrusik\Bibrusik\Bibrusik.csproj", "{B02DB94E-D855-4C98-A951-1249A80B2A20}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{070E7EF7-A0C1-4DD2-82F1-CBB00023FB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibrusik", "Bibrusik\Bibrusik.csproj", "{B02DB94E-D855-4C98-A951-1249A80B2A20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B02DB94E-D855-4C98-A951-1249A80B2A20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bibrusik</RootNamespace>
+    <AssemblyName>Bibrusik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'BothProjects|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\BothProjects\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Json, Version=7.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Net.Http.Json.7.0.1\lib\net462\System.Net.Http.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\..\bibrus\Tomczak-Projekt-Bibrus\bibrus\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Logowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logowanie.Designer.cs">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelAdmin.Designer.cs">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieKlasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieKlasy.Designer.cs">
+      <DependentUpon>DodawanieKlasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WidokKlasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WidokKlasy.Designer.cs">
+      <DependentUpon>WidokKlasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WyborKlasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WyborKlasy.Designer.cs">
+      <DependentUpon>WyborKlasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrekwencjaKlasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrekwencjaKlasy.Designer.cs">
+      <DependentUpon>FrekwencjaKlasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zmienhaslo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zmienhaslo.Designer.cs">
+      <DependentUpon>Zmienhaslo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieOcen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieOcen.Designer.cs">
+      <DependentUpon>DodawanieOcen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrupoweDodawanieOcen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrupoweDodawanieOcen.Designer.cs">
+      <DependentUpon>GrupoweDodawanieOcen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieUwag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieUwag.Designer.cs">
+      <DependentUpon>DodawanieUwag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrekwencjaNauczyciel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrekwencjaNauczyciel.Designer.cs">
+      <DependentUpon>FrekwencjaNauczyciel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieUcznia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieUcznia.Designer.cs">
+      <DependentUpon>DodawanieUcznia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OcenyUczen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OcenyUczen.Designer.cs">
+      <DependentUpon>OcenyUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacjeUczen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacjeUczen.Designer.cs">
+      <DependentUpon>InformacjeUczen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Logowanie.resx">
+      <DependentUpon>Logowanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelAdmin.resx">
+      <DependentUpon>PanelAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieKlasy.resx">
+      <DependentUpon>DodawanieKlasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WidokKlasy.resx">
+      <DependentUpon>WidokKlasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WyborKlasy.resx">
+      <DependentUpon>WyborKlasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrekwencjaKlasy.resx">
+      <DependentUpon>FrekwencjaKlasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zmienhaslo.resx">
+      <DependentUpon>Zmienhaslo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieOcen.resx">
+      <DependentUpon>DodawanieOcen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrupoweDodawanieOcen.resx">
+      <DependentUpon>GrupoweDodawanieOcen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieUwag.resx">
+      <DependentUpon>DodawanieUwag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrekwencjaNauczyciel.resx">
+      <DependentUpon>FrekwencjaNauczyciel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieUcznia.resx">
+      <DependentUpon>DodawanieUcznia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OcenyUczen.resx">
+      <DependentUpon>OcenyUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacjeUczen.resx">
+      <DependentUpon>InformacjeUczen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2818%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 true.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2812%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2811%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2811%2911.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bibrusek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pixil-frame-0 %2811%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z_bibrusek.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
