@@ -7,6 +7,8 @@ namespace BibrusServer.GraphQL
         public BibrusSchema(BibrusDbContext context) : base()
         {
         Query = new BibrusQuery(context);
+
+        Mutation = new BibrusMutation(context);
         }
     }
 }
