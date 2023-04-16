@@ -50,6 +50,22 @@ namespace BibrusServer.GraphQL
                     return values;
                 }
                 );
+
+            Field<ListGraphType<StringGraphType>>(
+                "GetClasses",
+                arguments: new QueryArguments(new QueryArgument<NonNullGraphType<IntGraphType>> { Name="id"}),
+                resolve: context =>
+                {
+                    var Uid = context.GetArgument<int>("id");
+                    var employee = _context.Employees.Single(a => a.UserId == Uid);
+                    List<Subject> subjects = employee.Subjects.ToList();
+                    List<Class> classes = new List<Class>();
+                    foreach(Subject subject in subjects)
+                    {
+                        subject.Classes.
+                    }
+                }
+
         } 
 
     }
