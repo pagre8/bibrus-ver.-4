@@ -57,7 +57,6 @@ namespace Bibrusik
                     throw new Exception(response.ReasonPhrase);
                 }
                 var parsedResponse = await response.Content.ReadFromJsonAsync<JsonElement>();
-                Console.WriteLine(parsedResponse.ToString());
                 MessageBox.Show("Zmieniono pomyślnie", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)

@@ -102,12 +102,6 @@
     <Compile Include="Logowanie.Designer.cs">
       <DependentUpon>Logowanie.cs</DependentUpon>
     </Compile>
-    <Compile Include="PanelAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PanelAdmin.Designer.cs">
-      <DependentUpon>PanelAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="DodawanieKlasy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PanelAdmin.resx">
-      <DependentUpon>PanelAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DodawanieKlasy.resx">
       <DependentUpon>DodawanieKlasy.cs</DependentUpon>

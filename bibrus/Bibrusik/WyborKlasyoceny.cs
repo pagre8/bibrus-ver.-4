@@ -13,12 +13,10 @@ namespace Bibrusik
     {
         HttpClient Http = new HttpClient();
         int id;
-        string type;
-        public WyborKlasyoceny(int id, string type)
+        public WyborKlasyoceny(int id)
         {
             InitializeComponent();
             this.id = id;
-            this.type = type;
         }
 
         public class Class

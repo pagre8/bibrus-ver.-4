@@ -15,8 +15,6 @@ namespace Bibrusik
 
         HttpClient Http = new HttpClient();
         List<string> values;
-        bool nauczyciel;
-        public int selectedPage;
         public Menu(int _UserId)
         {
             InitializeComponent();
@@ -79,7 +77,7 @@ namespace Bibrusik
 
         private void button3_Click(object sender, EventArgs e)
         {
-            WyborKlasyfrekwencja wyborKlasyfrekwencja = new WyborKlasyfrekwencja(UserId, values[1]);
+            WyborKlasyfrekwencja wyborKlasyfrekwencja = new WyborKlasyfrekwencja(UserId);
             wyborKlasyfrekwencja.ShowDialog();
         }
 
@@ -104,7 +102,7 @@ namespace Bibrusik
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
