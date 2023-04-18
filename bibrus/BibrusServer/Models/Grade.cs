@@ -11,19 +11,19 @@ public partial class Grade
 
     public int? Subjectid { get; set; }
 
-    public int? Value { get; set; }
+    public int Value { get; set; }
 
-    public int? Weight { get; set; }
+    public int Weight { get; set; }
 
-    public DateTime? Date { get; set; }
+    public DateTime Date { get; set; }
 
     public string? Comment { get; set; }
 
     public string? Category { get; set; }
 
-    public bool? CountToAvg { get; set; }
+    public bool CountToAvg { get; set; }
 
-    public int? Semester { get; set; }
+    public int Semester { get; set; }
 
     public virtual Student? Student { get; set; }
 

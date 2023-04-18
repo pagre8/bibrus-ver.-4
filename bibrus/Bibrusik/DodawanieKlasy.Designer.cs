@@ -36,16 +36,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.add_button1 = new System.Windows.Forms.Button();
+            this.rokSzkolny = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // checkedListBox2
             // 
             this.checkedListBox2.BackColor = System.Drawing.Color.White;
             this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "przedmiot1",
-            "przedmiot2",
-            "przedmiot3"});
             this.checkedListBox2.Location = new System.Drawing.Point(334, 23);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(89, 124);
@@ -55,10 +53,6 @@
             // 
             this.checkedListBox1.BackColor = System.Drawing.Color.White;
             this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "uczen1 ",
-            "uczen2",
-            "uczen3"});
             this.checkedListBox1.Location = new System.Drawing.Point(191, 23);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(89, 124);
@@ -74,6 +68,7 @@
             this.label3.Size = new System.Drawing.Size(75, 13);
             this.label3.TabIndex = 87;
             this.label3.Text = "Wychowawca";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // comboBox1
             // 
@@ -116,16 +111,39 @@
             this.add_button1.TabIndex = 98;
             this.add_button1.Text = "Dodaj";
             this.add_button1.UseVisualStyleBackColor = false;
+            this.add_button1.Click += new System.EventHandler(this.add_button1_Click);
             // 
-            // Form11
+            // rokSzkolny
+            // 
+            this.rokSzkolny.Location = new System.Drawing.Point(20, 150);
+            this.rokSzkolny.Mask = "0000/0000";
+            this.rokSzkolny.Name = "rokSzkolny";
+            this.rokSzkolny.Size = new System.Drawing.Size(121, 20);
+            this.rokSzkolny.TabIndex = 99;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(20, 132);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 15, 2, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 87;
+            this.label1.Text = "Rok Szkolny";
+            this.label1.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // DodawanieKlasy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(452, 273);
+            this.Controls.Add(this.rokSzkolny);
             this.Controls.Add(this.add_button1);
             this.Controls.Add(this.checkedListBox2);
             this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
@@ -134,8 +152,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form11";
+            this.Name = "DodawanieKlasy";
             this.Text = "Dodawanie klasy";
+            this.Load += new System.EventHandler(this.DodawanieKlasy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +169,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button add_button1;
+        private System.Windows.Forms.MaskedTextBox rokSzkolny;
+        private System.Windows.Forms.Label label1;
     }
 }

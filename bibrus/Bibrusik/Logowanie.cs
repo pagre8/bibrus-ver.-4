@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Net.Http;
 using System.Text.Json;
 using System.Net.Http.Json;
 using System.Security.Cryptography;
@@ -68,7 +59,7 @@ namespace Bibrusik
                 string login = login_textbox.Text;
                 string password = password_textbox.Text;
 
-                //password = ComputeSha256Hash(password);
+                password = ComputeSha256Hash(password);
 
                 await FetchData(login,password);
 
@@ -92,7 +83,6 @@ namespace Bibrusik
                 "   )" +
                 "}"
             };
-            //Console.WriteLine(postBody);
             try
             {
                 var response = await Http.PostAsJsonAsync("https://localhost:7151/graphql", postBody);

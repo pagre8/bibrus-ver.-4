@@ -1,6 +1,6 @@
 ﻿namespace Bibrusik
 {
-    partial class FrekwencjaJedenUczen
+    partial class Form5
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrekwencjaJedenUczen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -106,11 +106,13 @@
             this.add_button.TabIndex = 75;
             this.add_button.Text = "Dodaj";
             this.add_button.UseVisualStyleBackColor = false;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
-            // FrekwencjaJedenUczen
+            // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(360, 286);
             this.Controls.Add(this.add_button);
@@ -123,8 +125,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "FrekwencjaJedenUczen";
-            this.Text = "Frekwencja";
+            this.Name = "Form5";
+            this.Text = "Dodawanie frekfencji";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

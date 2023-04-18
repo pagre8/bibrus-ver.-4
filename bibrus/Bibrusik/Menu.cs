@@ -1,17 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using System.Net.Http;
-using System.Text.Json;
 using System.Net.Http.Json;
 
 namespace Bibrusik
@@ -41,10 +33,7 @@ namespace Bibrusik
         {
             await FetchData();
             label8.Text = values[0];
-            if (values[1] == "nau")
-            {
-                nauczyciel = true;
-            }
+            
 
         }
 
@@ -90,32 +79,22 @@ namespace Bibrusik
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (nauczyciel)
-            {
-                selectedPage = 2;
-                Close();
-            }
-            selectedPage = 3;
-            Close();
+            WyborKlasyfrekwencja wyborKlasyfrekwencja = new WyborKlasyfrekwencja(UserId, values[1]);
+            wyborKlasyfrekwencja.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (nauczyciel)
-            {
-                selectedPage = 2;
-                Close();
-            }
-            selectedPage = 3;
-            Close();
-
-
+            WyborKlasyoceny wyborKlasyoceny = new WyborKlasyoceny(UserId, values[1]);
+            wyborKlasyoceny.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            InformacjeUczen form = new InformacjeUczen();
-            form.Show();
+            InformacjeUczen form = new InformacjeUczen(UserId);
+
+            form.ShowDialog();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -130,8 +109,14 @@ namespace Bibrusik
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //selectedPage = 1;
-            MessageBox.Show("Funkcja niedostępna","Informacja",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            DodawanieUcznia dodawanieUcznia = new DodawanieUcznia();
+            dodawanieUcznia.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DodawanieKlasy dodawanieKlasy = new DodawanieKlasy();
+            dodawanieKlasy.ShowDialog();
         }
     }
     

@@ -112,6 +112,7 @@
             this.semester_combobox.Size = new System.Drawing.Size(99, 21);
             this.semester_combobox.TabIndex = 68;
             this.semester_combobox.Text = "1";
+            this.semester_combobox.SelectedIndexChanged += new System.EventHandler(this.semester_combobox_SelectedIndexChanged_1);
             // 
             // label7
             // 
@@ -166,6 +167,7 @@
             this.kategoria.Name = "kategoria";
             this.kategoria.Size = new System.Drawing.Size(100, 20);
             this.kategoria.TabIndex = 63;
+            this.kategoria.Text = "kategoria";
             // 
             // label1
             // 
@@ -195,6 +197,7 @@
             this.ocena.Name = "ocena";
             this.ocena.Size = new System.Drawing.Size(99, 21);
             this.ocena.TabIndex = 61;
+            this.ocena.Text = "1";
             // 
             // kom
             // 
@@ -204,6 +207,7 @@
             this.kom.Name = "kom";
             this.kom.Size = new System.Drawing.Size(100, 20);
             this.kom.TabIndex = 60;
+            this.kom.Text = "komentarz";
             // 
             // add_button
             // 
@@ -216,8 +220,9 @@
             this.add_button.TabIndex = 73;
             this.add_button.Text = "Dodaj";
             this.add_button.UseVisualStyleBackColor = false;
+            this.add_button.Click += new System.EventHandler(this.add_button_Click);
             // 
-            // Form3
+            // DodawanieOcen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,8 +246,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form3";
+            this.Name = "DodawanieOcen";
             this.Text = "Dodawanie oceny";
+            this.Load += new System.EventHandler(this.DodawanieOcen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

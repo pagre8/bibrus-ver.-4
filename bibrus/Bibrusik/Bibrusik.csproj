@@ -90,6 +90,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DodawanieFrekwencji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieFrekwencji.Designer.cs">
+      <DependentUpon>DodawanieFrekwencji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logowanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,23 +114,28 @@
     <Compile Include="DodawanieKlasy.Designer.cs">
       <DependentUpon>DodawanieKlasy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="WidokKlasy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WidokKlasy.Designer.cs">
       <DependentUpon>WidokKlasy.cs</DependentUpon>
     </Compile>
-    <Compile Include="WyborKlasy.cs">
+    <Compile Include="WyborKlasyoceny.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WyborKlasy.Designer.cs">
-      <DependentUpon>WyborKlasy.cs</DependentUpon>
+    <Compile Include="WyborKlasyoceny.Designer.cs">
+      <DependentUpon>WyborKlasyoceny.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrekwencjaKlasy.cs">
+    <Compile Include="WyborKlasyfrekwencja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrekwencjaKlasy.Designer.cs">
-      <DependentUpon>FrekwencjaKlasy.cs</DependentUpon>
+    <Compile Include="WyborKlasyfrekwencja.Designer.cs">
+      <DependentUpon>WyborKlasyfrekwencja.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -149,12 +160,6 @@
     </Compile>
     <Compile Include="GrupoweDodawanieOcen.Designer.cs">
       <DependentUpon>GrupoweDodawanieOcen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DodawanieUwag.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DodawanieUwag.Designer.cs">
-      <DependentUpon>DodawanieUwag.cs</DependentUpon>
     </Compile>
     <Compile Include="FrekwencjaNauczyciel.cs">
       <SubType>Form</SubType>
@@ -182,6 +187,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DodawanieFrekwencji.resx">
+      <DependentUpon>DodawanieFrekwencji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,11 +202,11 @@
     <EmbeddedResource Include="WidokKlasy.resx">
       <DependentUpon>WidokKlasy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WyborKlasy.resx">
-      <DependentUpon>WyborKlasy.cs</DependentUpon>
+    <EmbeddedResource Include="WyborKlasyoceny.resx">
+      <DependentUpon>WyborKlasyoceny.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrekwencjaKlasy.resx">
-      <DependentUpon>FrekwencjaKlasy.cs</DependentUpon>
+    <EmbeddedResource Include="WyborKlasyfrekwencja.resx">
+      <DependentUpon>WyborKlasyfrekwencja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -211,9 +219,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GrupoweDodawanieOcen.resx">
       <DependentUpon>GrupoweDodawanieOcen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DodawanieUwag.resx">
-      <DependentUpon>DodawanieUwag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrekwencjaNauczyciel.resx">
       <DependentUpon>FrekwencjaNauczyciel.cs</DependentUpon>
@@ -229,14 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -288,7 +288,9 @@
     <None Include="Resources\pixil-frame-0 %2811%292.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\z_bibrusek.png" />
+    <Content Include="Resources\pixil-frame-0 %2820%29.png" />
+    <Content Include="Resources\z_bibrusek.png" />
+    <None Include="Resources\pixil-frame-0 %2821%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

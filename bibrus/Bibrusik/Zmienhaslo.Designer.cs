@@ -113,10 +113,12 @@
             this.submit_button.TabIndex = 15;
             this.submit_button.Text = "Zatwierdż";
             this.submit_button.UseVisualStyleBackColor = false;
+            this.submit_button.Click += new System.EventHandler(this.submit_button_Click);
             // 
-            // Form2
+            // Zmienhaslo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.submit_button;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(247)))));
             this.ClientSize = new System.Drawing.Size(434, 261);
@@ -131,7 +133,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "Zmienhaslo";
             this.Text = "Zmień Hasło";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);

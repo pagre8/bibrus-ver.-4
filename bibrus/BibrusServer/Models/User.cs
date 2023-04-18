@@ -21,6 +21,8 @@ public partial class User
 
     public int? CredentialsId { get; set; }
 
+    public string? Pesel { get; set; }
+
     public virtual Address? Address { get; set; }
 
     public virtual Credential? Credentials { get; set; }
